@@ -11,3 +11,6 @@ Rendez vous à l'adresse indiquée par le terminal.
 <p align= "center">
 <img src="home.png"  align="middle">
 </p>
+
+Une fois le site lancé vous allez tomber sur cette page. Vous pouvez naviguer à travers
+les différents onglets pour découvrir toutes les pages du site.
