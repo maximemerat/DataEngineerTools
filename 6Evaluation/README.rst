@@ -1,7 +1,8 @@
 Paris Saint Germain application
 ===========
 
-Cette année pour l'évaluation, vous serez assez libre.
+Bienvenue sur mon projet ! 
+Vous pourrez découvrir sur cette application des informations sur le Paris St-Germain tels que l'effectif
 
 Consignes
 *********
