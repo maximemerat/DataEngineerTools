@@ -1,0 +1,33 @@
+{% extends 'layouts/default.html' %}
+
+{% block body %}
+
+<h2> Voici le palmares du Paris St Germain! </h2>
+
+<table class="uk-table uk-table-striped">
+    <thead>
+        <tr>
+            <th>Ligue 1 <h4>(9)</h4></th>
+            <th>Coupe de France <h4>(13)</h4></th>
+            <th>Coupe de la Ligue <h4>(10)</h4></th>
+            <th>Trophé des Champions <h4>(9)</h4></th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <ul>
+            {% for palmares in l_palmares %}
+                <tr>
+                    <td>{{ palmares['Ligue 1']}}</td>
+                    <td>{{ palmares['C_D_F']}}</td>
+                    <td>{{ palmares['C_D_L']}}</td>
+                    <td>{{ palmares['T_D_C']}}</td>
+                    
+                </tr>
+            {% endfor %}
+        </ul>
+        
+    </tbody>
+</table>
+
+{% endblock %}

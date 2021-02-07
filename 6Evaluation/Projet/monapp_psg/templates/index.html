@@ -1,0 +1,76 @@
+<!-- On definie la structure et les données que nous voulons afficher-->
+<!-- Ce fichier hérite du fichier default-->
+
+{% extends 'layouts/default.html' %}
+
+{% block body %}
+<h2> Bienvenue sur le site du supporter du Paris St Germain! </h2>
+
+
+<table class="uk-table uk-table-striped" width :80%;>
+    <thead>
+        <tr>
+            <th>Fondation</th>
+            <th>Stade</th>
+            <th>Championnat actuel</th>
+            <th>Propriétaire</th>
+            <th>Président</th>
+            <th>Entraîneur</th>
+            <th>Joueur le plus capé</th>
+            <th>Meilleur buteur</th>
+            
+            
+        </tr>
+    </thead>
+    <tbody>
+        <ul>
+                <tr>
+                    
+                    <td>1970</td>
+                    <td>Parc des Princes (48 583 places)</td>
+                    <td>Ligue 1</td>
+                    <td>Qatar Sport Investments</td>
+                    <td>Nasser Al-Khelaïfi</td>
+                    <td>Mauricio Pochettino</td>
+                    <td>Jean-Marc Pilorget (435)</td>
+                    <td>Edinson Cavani (200)</td>
+                </tr>
+        </ul>
+        
+    </tbody>
+</table>
+
+<div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+
+            <img src="https://images.psg.media/media/27046/alt-card_marquinhos.png?center=0.5,0.5&mode=crop&width=400&height=600&quality=75
+            " alt="" height="100%" width="100%" >
+
+
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <img src="https://images.psg.media/media/27051/alt-card_neymar.png?center=0.5,0.5&mode=crop&width=400&height=600&quality=75
+            " alt="" height="100%" width="100%" >
+            
+
+
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            
+            <img src="https://images.psg.media/media/27048/alt-card_mbappe.png?center=0.5,0.5&mode=crop&width=400&height=600&quality=75
+            " alt="" height="000%" width="100%" >
+            
+        
+        </div>
+    </div>
+    
+</div>
+
+
+
+{% endblock %}

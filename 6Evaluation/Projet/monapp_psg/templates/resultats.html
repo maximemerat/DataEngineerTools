@@ -1,0 +1,30 @@
+{% extends 'layouts/default.html' %}
+
+{% block body %}
+
+<h2> Voici les derniers matchs du Paris St Germain! </h2>
+
+<table class="uk-table uk-table-striped">
+    <thead>
+        <tr>
+            <th>Date du matche</th>
+            <th>Score</th>
+            <th>Compétition</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <ul>
+            {% for resultat in l_resultats %}
+                <tr>
+                    <td>{{ resultat['Date du matche']}}</td>
+                    <td>{{ resultat['Score']}}</td>
+                    <td>{{ resultat['Competition']}}</td>
+                </tr>
+            {% endfor %}
+        </ul>
+        
+    </tbody>
+</table>
+
+{% endblock %}

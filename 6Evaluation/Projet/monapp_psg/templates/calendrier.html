@@ -1,0 +1,30 @@
+{% extends 'layouts/default.html' %}
+
+{% block body %}
+
+<h2> Voici le calendrier des matchs du Paris St Germain! </h2>
+
+<table class="uk-table uk-table-striped">
+    <thead>
+        <tr>
+            <th>Date du matche</th>
+            <th>Équipes</th>
+            <th>Compétition</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <ul>
+            {% for cal in l_calendrier %}
+                <tr>
+                    <td>{{ cal['Date du matche']}}</td>
+                    <td>{{ cal['Equipe']}}</td>
+                    <td>{{ cal['Competition']}}</td>
+                </tr>
+            {% endfor %}
+        </ul>
+        
+    </tbody>
+</table>
+
+{% endblock %}

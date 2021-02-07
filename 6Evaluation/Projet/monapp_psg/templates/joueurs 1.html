@@ -1,0 +1,80 @@
+{% extends 'layouts/default.html' %}
+
+{% block body %}
+<div class='uk-container'>
+
+<h2> Voici la liste des joueurs du Paris St Germain! </h2>
+
+<table class="uk-table uk-table-striped">
+    <thead>
+        <tr>
+            <th>Joueurs</th>
+            <th>Poste</th>
+            <th>Numero</th>
+            <th>Age</th>
+            <th>Nationalité</th>
+            <th>Contrat</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <ul>
+            {% for joueur in l_joueurs %}
+                <tr>
+                    <td class="openModal" uk-toggle="target: #modal-joueur" data-nom="{{ joueur['Nom']}}" data-but="{{ joueur['Nb_but']}}" data-match="{{ joueur['Nb_match']}}" data-cartonj="{{ joueur['Carton_J']}}" data-cartonr="{{ joueur['Carton_R']}}">{{ joueur['Nom']}}</td>
+                    <td>{{ joueur['Poste']}}</td>
+                    <td>{{ joueur['_Numero']}}</td>
+                    <td>{{ joueur['Date de naissance']}}</td>
+                    <td>{{ joueur['Nationalité']}}</td>
+                    <td>{{ joueur['Contrat']}}</td>
+                </tr>
+            {% endfor %}
+        </ul>
+        
+    </tbody>
+</table>
+
+<!-- Ouvre un pop up quand on clique sur un joueur -->
+<div id="modal-joueur" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Information</h2>
+        <p>Nom : <span id="nomJoueur"></span></p>
+        <p>Nombre de but : <span id="nombreBut"></span></p>
+        <p>Nombre de match joué : <span id="nombreMatch"></span></p>
+        <p>Nombre de carton jaune : <span id="cartonJ"></span></p>
+        <p>Nombre de carton rouge : <span id="cartonR"></span></p>
+        <p class="uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+        </p>
+    </div>
+</div>
+
+</div>
+
+<!-- Permet de modifier dynamiquement les données lorqu'on clique sur un joueur-->
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $('body').on('click','.openModal',function(e) {
+            var nom = $(this).attr('data-nom');
+            $('#nomJoueur').html(nom);
+
+            var but = $(this).attr('data-but');
+            $('#nombreBut').html(but);
+
+            var match = $(this).attr('data-match');
+            $('#nombreMatch').html(match);
+
+            var cartonj = $(this).attr('data-cartonj');
+            $('#cartonJ').html(cartonj);
+
+            var cartonr = $(this).attr('data-cartonr');
+            $('#cartonR').html(cartonr);
+
+        });
+    });
+</script>
+{% endblock %}
