@@ -11,4 +11,3 @@ Rendez vous à l'adresse indiquée par le terminal.
 <p align= "center">
 <img src="home.png"  align="middle">
 </p>
-
