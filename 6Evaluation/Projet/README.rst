@@ -9,6 +9,6 @@ Rendez vous à l'adresse indiquée par le terminal.
 ## Page d'acceuil
 
 <p align= "center">
-<img src="home"  align="middle">
+<img src="home.png"  align="middle">
 </p>
 
