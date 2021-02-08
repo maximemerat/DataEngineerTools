@@ -39,7 +39,7 @@ $ cd Projet
 ```bash
 $ python3 run.py
 ```
-5. Copiez ensuite l'adresse https et ouvrez l dans un navigateur.
+5. Copiez ensuite l'adresse https et ouvrez la dans un navigateur.
 
 Vous pouvez maintenant naviguer sur le site ! Enjoy !
 
