@@ -20,7 +20,7 @@ Si vous ne l'avez pas sur votre machine, voici un tutoriel pour l'installer [Doc
 
 Suivez les commandes suivantes pour ouvrir le projet:
 
-1.Dans le terminal, placez vous à la racine du dossier precedement créé et tapez:
+1.Dans le terminal, placez vous à la racine du dossier précédemment créé et tapez:
 ```bash
 $ cd DataEngineerTools
 ```
