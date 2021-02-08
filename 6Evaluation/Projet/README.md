@@ -1,10 +1,47 @@
-## Lancement
+# Needed tools
 
-Forkez mon projet et créez un conteneur docker pour pouvoir lancer le projet.
+## Git 
 
-Executez le script python 'run.py'
+Vous devez récupérer le projet sur votre machine:
 
-Rendez vous à l'adresse indiquée par le terminal.
+1.Créez un dossier depuis le terminal et mettez vous à la racine de ce dossier:
+
+```
+$ git clone https://github.com/maximemerat/DataEngineerTools.git
+```
+
+## Docker
+
+Vous avez besoin de Docker pour lancer l'application.
+Si vous ne l'avez pas sur votre machine, voici un tutoriel pour l'installer [Docker install page](https://www.docker.com/get-started)
+
+
+# Lancement
+
+Suivez les commandes suivantes pour ouvrir le projet:
+
+1.Dans le terminal, placez vous à la racine du dossier precedement créé et tapez:
+```bash
+$ cd DataEngineerTools
+```
+2.Puis créez le conteneur Docker avec:
+```bash
+$ docker-compose up -d
+```
+3.Dirigez vous ensuite dans le dossier Projet:
+```bash
+$ cd 6Evaluation
+```
+```bash
+$ cd Projet
+```
+4.Tappez la commande:
+```bash
+$ python3 run.py
+```
+5. Copiez ensuite l'adresse http et ouvrez l dans un navigateur.
+
+Vous pouvez maintenant naviguer sur le site ! Enjoy !
 
 ## Page d'acceuil
 
