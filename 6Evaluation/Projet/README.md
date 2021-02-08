@@ -4,7 +4,7 @@
 
 Vous devez récupérer le projet sur votre machine:
 
-1.Créez un dossier depuis le terminal et mettez vous à la racine de ce dossier:
+Créez un dossier depuis le terminal et mettez vous à la racine de ce dossier:
 
 ```
 $ git clone https://github.com/maximemerat/DataEngineerTools.git
