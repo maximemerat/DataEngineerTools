@@ -1,4 +1,4 @@
-# Needed tools
+# User Guide
 
 ## Git 
 
@@ -16,7 +16,7 @@ Vous avez besoin de Docker pour lancer l'application.
 Si vous ne l'avez pas sur votre machine, voici un tutoriel pour l'installer [Docker install page](https://www.docker.com/get-started)
 
 
-# Lancement
+## Lancement
 
 Suivez les commandes suivantes pour ouvrir le projet:
 
